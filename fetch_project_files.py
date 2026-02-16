@@ -36,15 +36,6 @@ def main():
     project_number = args.project_number
     folder_path = args.folder
     
-    # Validate inputs
-    if not project_number:
-        print("Error: Project number cannot be empty.", file=sys.stderr)
-        sys.exit(1)
-    
-    if not folder_path:
-        print("Error: Folder path cannot be empty.", file=sys.stderr)
-        sys.exit(1)
-    
     # Check if folder exists
     if not os.path.exists(folder_path):
         print(f"Error: Folder '{folder_path}' does not exist.", file=sys.stderr)
